@@ -1,0 +1,55 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "root"
+    },
+    {
+      "path": "packages/abc_math",
+      "name": "📦 abc_math"
+    },
+    {
+      "path": "projects/hello-world-app"
+    },
+    {
+      "path": "projects/names-api"
+    }
+  ],
+
+  "settings": {
+    // hide certain files
+    "files.exclude": {
+      "**/*.pyc": {"when": "$(basename).py"}, 
+      "**/__pycache__": true,
+      "**/.pytest_cache": true,
+    },
+
+    // Select correct python vitual environment
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    
+    // black formatting
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+
+    // Configure testing in VS Code
+    "python.testing.pytestArgs": [
+      "${workspaceFolder}/tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,    
+
+    // Editor settings for python
+    "[python]": {
+      "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+      },
+      "editor.formatOnSave": true,
+    },
+  },
+
+  "extensions": {
+    "recommendations": [
+      "ms-python.isort"
+    ]
+  }
+}

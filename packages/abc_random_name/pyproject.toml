@@ -14,3 +14,10 @@ packages = [
 [tool.poetry.dependencies]
 python = ">=3.8"
 numpy = "^1.2.3"
+
+[tool.black]
+line-length = 120
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
