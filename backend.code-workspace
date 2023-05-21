@@ -9,6 +9,10 @@
       "name": "📦 abc_math"
     },
     {
+      "path": "packages/abc_random_name",
+      "name": "📦 abc_random_name"
+    },
+    {
       "path": "projects/hello-world-app"
     },
     {
