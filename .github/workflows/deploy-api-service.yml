@@ -15,7 +15,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r projects/names-api/requirements.txt
+          cd projects/names-api
+          pip install -r requirements.txt
       - name: Hello World
         run: python projects/names-api/main.py
         shell: sh
