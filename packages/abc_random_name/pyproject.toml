@@ -1,0 +1,16 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "abc_random_name"
+version = "0.0.1"
+description = "Random Name Generator"
+authors = [ "Name <email@email.io>", ]
+packages = [
+  { include = "abc_random_name" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+numpy = "^1.2.3"

@@ -1,0 +1,2 @@
+-e ../../packages/abc_random_name
+numpy==1.22.3  # external dependency, installed from PyPI
